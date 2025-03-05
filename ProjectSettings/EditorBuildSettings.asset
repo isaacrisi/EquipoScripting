@@ -242,4 +242,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Juego/Scenes/PERDER.unity
     guid: 1fb834b32e63d184bb4372d591f9be0e
+  - enabled: 1
+    path: Assets/Juego/Scenes/NIVEL2.unity
+    guid: a7c5cd2f54909c048a2e265a1d2c8e0b
   m_configObjects: {}

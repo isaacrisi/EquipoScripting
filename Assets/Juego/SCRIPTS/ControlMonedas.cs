@@ -5,7 +5,7 @@ using MoreMountains.Tools;
 using MoreMountains.CorgiEngine;
 using Unity.VisualScripting;
 
-public class MECANICAFINNIVEL : MonoBehaviour , MMEventListener<PickableItemEvent> 
+public class ControlMonedas : MonoBehaviour , MMEventListener<PickableItemEvent> 
 {
     void OnEnable()
     {
@@ -23,7 +23,7 @@ public class MECANICAFINNIVEL : MonoBehaviour , MMEventListener<PickableItemEven
         if (coin != null)
         {
 
-            Debug.Log(coin.PointsToAdd);
+            Debug.Log(coin);
             points += 10;
         }
         if (points == 100)
