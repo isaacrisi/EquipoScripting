@@ -25,6 +25,7 @@ public class ControlMonedas : MonoBehaviour , MMEventListener<PickableItemEvent>
 
             Debug.Log(coin);
             points += 10;
+            Debug.Log(points);
         }
         if (points == 100)
         {
