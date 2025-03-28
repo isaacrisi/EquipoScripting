@@ -60,7 +60,7 @@ namespace MoreMountains.Tools
 				case "Save":
 					MMAchievementManager.SaveAchievements ();
 					break;
-				/*
+				
 				// These are just examples of how you could catch a GameStart MMGameEvent and trigger the potential unlock of a corresponding achievement 
 				case "GameStart":
 					MMAchievementManager.UnlockAchievement("theFirestarter");
@@ -74,7 +74,7 @@ namespace MoreMountains.Tools
 				case "Jump":
 					MMAchievementManager.UnlockAchievement ("aSmallStepForMan");
 					MMAchievementManager.AddProgress ("toInfinityAndBeyond", 1);
-					break;*/
+					break;
 			}
 		} 
 	}

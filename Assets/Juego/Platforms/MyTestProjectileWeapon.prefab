@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TriggerMode: 1
   Interruptable: 0
-  InitializeOnStart: 0
+  InitializeOnStart: 1
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
   TimeBetweenUses: 1
