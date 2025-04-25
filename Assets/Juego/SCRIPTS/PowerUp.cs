@@ -41,7 +41,7 @@ public class PowerUp : MonoBehaviour
     }
     if (powerUp.tipo == TipoPowerUp.Especial)
     {
-        GestorLogros.instancia.DesbloquearLogro("Chef Potenciado");
+        GestorLogros.instancia.DesbloquearLogro("samuel Potenciado");
     }
 
 }
