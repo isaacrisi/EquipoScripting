@@ -17,4 +17,9 @@ public class Coin : MonoBehaviour
             Destroy(gameObject); // Destruye la moneda al tocarla
         }
     }
+    if (totalMonedasRecogidas >= totalMonedasNivel)
+{
+    GestorLogros.instancia.DesbloquearLogro("Maestro Recolector");
+}
+
 }
