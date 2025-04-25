@@ -39,4 +39,9 @@ public class PowerUp : MonoBehaviour
         // Destruye el objeto del power‑up
         Destroy(gameObject);
     }
+    if (powerUp.tipo == TipoPowerUp.Especial)
+    {
+        GestorLogros.instancia.DesbloquearLogro("Chef Potenciado");
+    }
+
 }
