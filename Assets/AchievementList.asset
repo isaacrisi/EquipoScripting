@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AchievementsListID: AchievementsList
   Achievements:
-  - AchievementID: 
+  - AchievementID: MatarEnemigos
     AchievementType: 0
     HiddenAchievement: 0
     UnlockedStatus: 0
-    Title: 
-    Description: 
-    Points: 0
-    LockedImage: {fileID: 0}
-    UnlockedImage: {fileID: 0}
-    UnlockedSound: {fileID: 0}
-    ProgressTarget: 0
+    Title: Yopal Killer
+    Description: 'Mata 10 enemigos '
+    Points: 10
+    LockedImage: {fileID: 21300000, guid: 714405fb57858574390103f056fa1787, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: 79e8810a5550c2e4493fc41be40ae353, type: 3}
+    UnlockedSound: {fileID: 8300000, guid: c67a7170556406645bd09cd6d6f16843, type: 3}
+    ProgressTarget: 10
     ProgressCurrent: 0
