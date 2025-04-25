@@ -18,8 +18,8 @@ public class Coin : MonoBehaviour
         }
     }
     if (totalMonedasRecogidas >= totalMonedasNivel)
-{
-    GestorLogros.instancia.DesbloquearLogro("Maestro Recolector");
-}
+    {
+        GestorLogros.instancia.DesbloquearLogro("Maestro Recolector");
+    }
 
 }
