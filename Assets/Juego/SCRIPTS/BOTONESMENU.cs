@@ -18,4 +18,8 @@ public class BOTONESMENU : MonoBehaviour
     {
         MMSceneLoadingManager.LoadScene("NIVEL1");
     }
+    public void Logros()
+    {
+        MMSceneLoadingManager.LoadScene("LOGROS");
+    }
 }

@@ -1,40 +1,42 @@
 using UnityEngine;
 using System.Collections.Generic;
+using MoreMountains.Tools;
+using Unity.VisualScripting;
 
 public class GestorLogros : MonoBehaviour
 {
-    /*    public static GestorLogros instancia;
-        //public List<Logro> logros;
+    [SerializeField]
+    private MMAchievementList lista;
 
-        private void Awake()
+    [SerializeField]
+    private List<GameObject> logros;
+
+    void Start()
+    {
+        OcultarLogros();
+    }
+
+    public void Update()
+    {
+        ActualizarEstadoLogros();
+    }
+    public void OcultarLogros()
+    {
+        foreach (GameObject logro in logros)
         {
-            if (instancia == null)
-            {
-                instancia = this;
-                DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
+            logro.SetActive(false);
         }
 
-        public void DesbloquearLogro(string nombre)
+    }
+    public void ActualizarEstadoLogros()
+    {
+        int indice = 0;
+        foreach (MMAchievement achievement in MMAchievementManager.AchievementsList)
         {
-            Logro logro = logros.Find(l => l.nombre == nombre);
-            if (logro != null && !logro.desbloqueado)
+            if (indice<logros.Count)
             {
-                logro.desbloqueado = true;
-                PlayerPrefs.SetInt(nombre, 1);
-                Debug.Log("Logro desbloqueado: " + nombre);
-                // Aquí podrías activar un popup si haces uno después
+                logros[indice++].SetActive(achievement.UnlockedStatus);
             }
         }
-
-        public bool EstaDesbloqueado(string nombre)
-        {
-            return PlayerPrefs.GetInt(nombre, 0) == 1;
-        }
-
-          */
+    }
 }
