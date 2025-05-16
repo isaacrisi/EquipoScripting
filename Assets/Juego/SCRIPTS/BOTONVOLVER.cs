@@ -6,7 +6,7 @@ using UnityEngine;
 public class BOTONVOLVER : MonoBehaviour
 {
     // Start is called before the first frame update
-    public void VolverMenu()
+    public void VolverMenu(
     {
         MMSceneLoadingManager.LoadScene("MENU");
     }
