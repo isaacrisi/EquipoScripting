@@ -1,4 +1,4 @@
-using MoreMountains.Tools
+using MoreMountains.Tools;
 using UnityEngine;
 
 public class EnemyKillCounter : MonoBehaviour
