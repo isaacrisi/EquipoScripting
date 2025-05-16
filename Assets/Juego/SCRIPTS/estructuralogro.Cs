@@ -1,4 +1,4 @@
-/*public class Logro
+/*public class Logr
 {
     public string nombre;
     public string descripcion;
