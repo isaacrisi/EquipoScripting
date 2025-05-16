@@ -44,6 +44,8 @@ GameObject:
   - component: {fileID: 6983384875199994490}
   - component: {fileID: 8725832893916093223}
   - component: {fileID: 6198090850341868120}
+  - component: {fileID: 6140362365053171300}
+  - component: {fileID: 8163657949514473110}
   m_Layer: 13
   m_Name: FinalBoss
   m_TagString: Untagged
@@ -165,7 +167,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 19.2, y: 10.8}
-    newSize: {x: 8, y: 8}
+    newSize: {x: 19.2, y: 10.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -889,12 +891,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 63b4885e752c3b447b03b24f8ce32e04, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e0dca7aa99b865e4fb42a466656e5c64, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8, y: 8}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1002,17 +1004,35 @@ MonoBehaviour:
     Transitions:
       array:
       - Decision: {fileID: 6198090850341868120}
-        TrueState: chase
+        TrueState: dash
         FalseState: 
-  - StateName: chase
+  - StateName: dash
     Actions:
       array:
-      - {fileID: 1584207065247255305}
+      - {fileID: 6140362365053171300}
     Transitions:
       array:
-      - Decision: {fileID: 7402058006669888793}
-        TrueState: 
-        FalseState: idle
+      - Decision: {fileID: 6198090850341868120}
+        TrueState: heal
+        FalseState: 
+  - StateName: heal
+    Actions:
+      array:
+      - {fileID: 8725832893916093223}
+    Transitions:
+      array:
+      - Decision: {fileID: 6198090850341868120}
+        TrueState: run
+        FalseState: 
+  - StateName: run
+    Actions:
+      array:
+      - {fileID: 8163657949514473110}
+    Transitions:
+      array:
+      - Decision: {fileID: 6198090850341868120}
+        TrueState: idle
+        FalseState: 
   TimeInThisState: 0
   Target: {fileID: 0}
   _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
@@ -1131,3 +1151,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: 
   NumberOfHits: 1
+--- !u!114 &6140362365053171300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7252282072056863097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d165e07d120ab347ac5f7d582bb3add, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationMode: 0
+  Label: 
+--- !u!114 &8163657949514473110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7252282072056863097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d71fcae084b63d4d858296087201bf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationMode: 0
+  Label: 
