@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PowerUp : MonoBehaviour
 {
+    /*
     // Duración de la invencibilidad en segundos
     public float invincibilityDuration = 20f;
 
@@ -43,5 +44,5 @@ public class PowerUp : MonoBehaviour
     {
         GestorLogros.instancia.DesbloquearLogro("samuel Potenciado");
     }
-
+    */
 }
