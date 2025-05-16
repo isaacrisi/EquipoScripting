@@ -1,4 +1,4 @@
-using UnityEngine
+using UnityEngine;
 using MoreMountains.Tools;
 using MoreMountains.CorgiEngine;
 
