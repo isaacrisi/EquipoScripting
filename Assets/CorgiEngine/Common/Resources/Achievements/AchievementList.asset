@@ -21,8 +21,8 @@ MonoBehaviour:
     Title: Your Princess is in Another Castle
     Description: Reach the end of a level
     Points: 200
-    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
-    UnlockedImage: {fileID: 21300004, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    LockedImage: {fileID: 21300000, guid: 9c3cbada13d5a6f43b3f7b97d9689aca, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: 9c3cbada13d5a6f43b3f7b97d9689aca, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 0
     ProgressCurrent: 0
@@ -33,8 +33,8 @@ MonoBehaviour:
     Title: Jump Around
     Description: Jump at least 10 times
     Points: 100
-    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
-    UnlockedImage: {fileID: 21300000, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    LockedImage: {fileID: 21300000, guid: 65a61898e70eaef4f8e5aecc94e43e01, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: 65a61898e70eaef4f8e5aecc94e43e01, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 10
     ProgressCurrent: 0
@@ -45,8 +45,8 @@ MonoBehaviour:
     Title: Money Money Money
     Description: Grab 3 coins
     Points: 50
-    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
-    UnlockedImage: {fileID: 21300002, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    LockedImage: {fileID: 21300000, guid: 1d599cffb4a1b0a4d8dda5b88c6f69b4, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: 1d599cffb4a1b0a4d8dda5b88c6f69b4, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 3
     ProgressCurrent: 0
@@ -57,8 +57,8 @@ MonoBehaviour:
     Title: Death is only the Beginning
     Description: Die for the first time
     Points: 30
-    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
-    UnlockedImage: {fileID: 21300008, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    LockedImage: {fileID: 21300000, guid: 6e5910c2b3478b44bb77a23f2bae03ee, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: 6e5910c2b3478b44bb77a23f2bae03ee, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 0
     ProgressCurrent: 0
@@ -69,8 +69,8 @@ MonoBehaviour:
     Title: Medic !
     Description: Grab a health bonus
     Points: 25
-    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
-    UnlockedImage: {fileID: 21300006, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    LockedImage: {fileID: 21300000, guid: f591cea294e8d694ca5d5c73cca90c56, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: f591cea294e8d694ca5d5c73cca90c56, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 0
     ProgressCurrent: 0

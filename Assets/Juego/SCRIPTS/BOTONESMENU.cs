@@ -16,6 +16,10 @@ public class BOTONESMENU : MonoBehaviour
     }
     public void OnServerInitialized()
     {
-        MMSceneLoadingManager.LoadScene("NIVEL1");
+        MMSceneLoadingManager.LoadScene("DIFICULTAD");
+    }
+    public void Logros()
+    {
+        MMSceneLoadingManager.LoadScene("LOGROS");
     }
 }
