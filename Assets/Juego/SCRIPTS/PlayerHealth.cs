@@ -1,26 +1,26 @@
-using UnityEngine;
+using UnityEngine
 
 public class PlayerHealth : MonoBehaviour
 {
     public int health = 3;
     private bool isInvincible = false;
 
-    // Método para activar o desactivar la invencibilidad
+    // MÃ©todo para activar o desactivar la invencibilidad
     public void SetInvincible(bool state)
     {
         isInvincible = state;
         Debug.Log("Invencibilidad activada: " + state);
 
-        // Opcional: aquí puedes agregar efectos visuales para indicar el estado de invencibilidad
+        // Opcional: aquÃ­ puedes agregar efectos visuales para indicar el estado de invencibilidad
     }
 
-    // Método para recibir daño
+    // MÃ©todo para recibir daÃ±o
     public void TakeDamage(int damage)
     {
         if (!isInvincible)
         {
             health -= damage;
-            Debug.Log("Daño recibido. Salud restante: " + health);
+            Debug.Log("DaÃ±o recibido. Salud restante: " + health);
 
             if (health <= 0)
             {
@@ -29,14 +29,14 @@ public class PlayerHealth : MonoBehaviour
         }
         else
         {
-            Debug.Log("Jugador invencible, no se recibe daño.");
+            Debug.Log("Jugador invencible, no se recibe daÃ±o.");
         }
     }
 
-    // Método que se ejecuta cuando la salud llega a 0
+    // MÃ©todo que se ejecuta cuando la salud llega a 0
     private void Die()
     {
         Debug.Log("Jugador ha muerto.");
-        // Aquí puedes agregar la lógica para reiniciar el nivel o mostrar una pantalla de Game Over.
+        // AquÃ­ puedes agregar la lÃ³gica para reiniciar el nivel o mostrar una pantalla de Game Over.
     }
 }
